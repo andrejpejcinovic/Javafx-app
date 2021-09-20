@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.KorisniciAdministratorController">
+    <children>
+        <TableView fx:id="tableKorisnik" layoutX="168.0" prefHeight="400.0" prefWidth="693.0">
+            <columns>
+                <TableColumn fx:id="IDCol" prefWidth="111.0" text="ID" />
+            <TableColumn fx:id="korisnickoImeCol" prefWidth="131.0" text="Korisničko Ime" />
+                <TableColumn fx:id="lozinkaCol" prefWidth="121.0" text="Lozinka" />
+                <TableColumn fx:id="ulogaCol" prefWidth="128.0" text="Uloga" />
+                <TableColumn fx:id="editCol" prefWidth="207.0" />
+            </columns>
+        </TableView>
+        <VBox alignment="TOP_CENTER" layoutY="14.0" prefHeight="223.0" prefWidth="168.0" spacing="30.0">
+            <children>
+                <Button fx:id="korisnikButton" mnemonicParsing="false" onAction="#korisnikButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Dodajte korisnika" />
+                <Button fx:id="imenikButton" mnemonicParsing="false" onAction="#imenikButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Imenik" />
+                <Button fx:id="blokListaButton" mnemonicParsing="false" onAction="#blokListaButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Blok Lista" />
+            <Button fx:id="favoritiButton" mnemonicParsing="false" onAction="#favoritiButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Favoriti" />
+            <Button fx:id="podaciButton" mnemonicParsing="false" onAction="#podaciButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Korisnički podaci" />
+            <Button fx:id="odjavaButton" mnemonicParsing="false" onAction="#odjavaButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Odjava" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

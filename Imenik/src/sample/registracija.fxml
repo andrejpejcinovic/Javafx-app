@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="369.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistracijaController">
+   <children>
+      <VBox layoutX="53.0" layoutY="29.0" prefHeight="281.0" prefWidth="85.0" spacing="35.0">
+         <children>
+            <Label text="E-Mail">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Lozinka">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Ime">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Prezime">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Broj Telefona">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Adresa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="178.0" layoutY="29.0" prefHeight="288.0" prefWidth="269.0" spacing="27.0">
+         <children>
+            <TextField fx:id="korImeField" />
+            <TextField fx:id="lozinkaField" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="imeField" layoutX="10.0" layoutY="35.0" />
+            <TextField fx:id="prezimeField" layoutX="10.0" layoutY="60.0" />
+            <TextField fx:id="brojTelField" layoutX="10.0" layoutY="60.0" />
+            <TextField fx:id="adresaField" layoutX="10.0" layoutY="110.0" />
+         </children></VBox>
+      <Label fx:id="registerLabel" layoutX="52.0" layoutY="330.0" prefHeight="25.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="registerButton" layoutX="294.0" layoutY="330.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="129.0" text="Registrirajte se!" />
+   </children>
+</AnchorPane>

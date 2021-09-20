@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="187.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.VecDodanoController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="43.0" prefHeight="31.0" prefWidth="262.0" text="Kontakt je već dodan u favorite" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="28.0" layoutY="118.0" prefHeight="46.0" prefWidth="247.0" spacing="80.0">
+            <children>
+                <Button fx:id="uReduButton" mnemonicParsing="false" onAction="#uReduButtonOnAction" prefWidth="70.0" text="U redu" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

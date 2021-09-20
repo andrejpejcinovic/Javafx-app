@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ImenikController">
+   <children>
+      <TableView fx:id="tableImenik" layoutX="168.0" prefHeight="466.0" prefWidth="729.0">
+        <columns>
+          <TableColumn fx:id="imeCol" prefWidth="138.0" text="Ime" />
+          <TableColumn fx:id="prezimeCol" prefWidth="138.0" text="Prezime" />
+            <TableColumn fx:id="brojTelCol" prefWidth="267.0" text="Broj Telefona" />
+            <TableColumn fx:id="editCol" prefWidth="185.0" />
+        </columns>
+      </TableView>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="163.0" prefWidth="54.0" spacing="30.0">
+         <children>
+            <Label opacity="0.5" text="Ime" />
+            <Label opacity="0.5" text="Prezime" />
+            <Label opacity="0.5" text="Adresa" />
+            <Label opacity="0.5" text="Broj Tel." />
+         </children>
+      </VBox>
+      <VBox layoutX="68.0" layoutY="14.0" prefHeight="163.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Label fx:id="imeLabel" />
+            <Label fx:id="prezimeLabel" />
+            <Label fx:id="adresaLabel" />
+            <Label fx:id="brojTelLabel" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutY="207.0" prefHeight="191.0" prefWidth="168.0" spacing="30.0">
+         <children>
+            <Button fx:id="podaciButton" mnemonicParsing="false" onAction="#podaciButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Uredite svoje podatke" />
+            <Button fx:id="kontaktButton" mnemonicParsing="false" onAction="#kontaktButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Dodajte kontakt" />
+            <Button fx:id="blokListaButton" mnemonicParsing="false" onAction="#blokListaButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Blok Lista" />
+            <Button fx:id="favoritiButton" mnemonicParsing="false" onAction="#favoritiButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Favoriti" />
+            <Button fx:id="odjavaButton" mnemonicParsing="false" onAction="#odjavaButtonOnAction" prefHeight="25.0" prefWidth="141.0" text="Odjava" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

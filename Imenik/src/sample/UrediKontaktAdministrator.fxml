@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="388.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UrediKontaktAdministratorController">
+    <children>
+        <VBox layoutX="31.0" layoutY="35.0" prefHeight="271.0" prefWidth="189.0" spacing="50.0">
+            <children>
+            <Spinner fx:id="urediIDSpinner" editable="true" prefHeight="25.0" prefWidth="191.0" />
+                <TextField fx:id="urediImeField" promptText="Ime" />
+                <TextField fx:id="urediPrezimeField" promptText="Prezime" />
+                <TextField fx:id="urediBrojTelField" promptText="Broj Telefona" />
+            </children></VBox>
+        <Button fx:id="urediKontaktButton" layoutX="51.0" layoutY="331.0" mnemonicParsing="false" onAction="#urediKontaktButtonOnAction" prefHeight="15.0" prefWidth="148.0" text="Uredite kontakt" />
+      <Label fx:id="urediLabel" alignment="CENTER" layoutX="31.0" layoutY="298.0" prefHeight="17.0" prefWidth="189.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

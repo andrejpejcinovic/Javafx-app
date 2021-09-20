@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="302.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FavoritiAdministratorController">
+    <children>
+        <TableView fx:id="tableFavoritiAdministrator" prefHeight="302.0" prefWidth="758.0">
+            <columns>
+            <TableColumn fx:id="IDKorisnikaCol" prefWidth="112.0" text="ID Korisnika" />
+            <TableColumn fx:id="IDCol" prefWidth="112.0" text="ID Favorita" />
+                <TableColumn fx:id="imeCol" prefWidth="112.0" text="Ime" />
+                <TableColumn fx:id="prezimeCol" prefWidth="113.0" text="Prezime" />
+                <TableColumn fx:id="brojTelCol" minWidth="0.0" prefWidth="200.0" text="Broj Telefona" />
+                <TableColumn fx:id="editCol" prefWidth="108.0" text="Edit" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

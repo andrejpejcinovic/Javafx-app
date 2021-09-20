@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <VBox layoutX="62.0" layoutY="60.0" prefHeight="137.0" prefWidth="128.0" spacing="100.0">
+         <children>
+            <Label text="E-Mail:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="60.0" text="Lozinka:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="190.0" layoutY="57.0" prefHeight="161.0" prefWidth="252.0" spacing="100.0">
+         <padding>
+            <Insets top="3.0" />
+         </padding>
+         <children>
+            <TextField fx:id="usernameTextField" />
+            <PasswordField fx:id="enterPasswordField" />
+         </children>
+      </VBox>
+      <Label fx:id="loginMessageLabel" layoutX="60.0" layoutY="250.0" prefHeight="25.0" prefWidth="380.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="59.0" layoutY="295.0" prefHeight="27.0" prefWidth="380.0" spacing="140.0">
+         <children>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="25.0" prefWidth="118.0" text="Registracija" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="118.0" text="Prijava" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

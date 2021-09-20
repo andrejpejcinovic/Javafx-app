@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="302.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BlokListaController">
+   <children>
+      <TableView fx:id="tableBlokLista" prefHeight="302.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="imeCol" prefWidth="112.0" text="Ime" />
+          <TableColumn fx:id="prezimeCol" prefWidth="113.0" text="Prezime" />
+            <TableColumn fx:id="brojTelCol" minWidth="0.0" prefWidth="200.0" text="Broj Telefona" />
+            <TableColumn fx:id="editCol" prefWidth="122.0" text="Edit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
